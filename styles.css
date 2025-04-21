@@ -1,0 +1,266 @@
+/* Apply the new color palette */
+
+:root {
+    --primary-color: #1E3A5F; /* Dark metallic blue */
+    --primary-gradient: linear-gradient(135deg, #1E3A5F, #2C4A6E); /* Metallic effect */
+    --accent-color: #F5A623; /* Vibrant orange */
+    --background-color: #F9FAFB; /* Very light gray */
+    --surface-color: #FFFFFF; /* Clean white */
+    --text-primary-color: #1F2937; /* Deep gray/blue */
+    --text-secondary-color: #6B7280; /* Soft gray */
+    --highlight-color: #72D6DF; /* Soft aqua */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-primary-color);
+}
+
+header {
+    background: var(--primary-gradient);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    color: var(--surface-color);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--surface-color);
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    flex: 1;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.intro img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    width: 150px; /* Voeg deze regel toe */
+    height: 150px; /* Voeg deze regel toe */
+}
+
+.intro-text h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.intro-text h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.intro-text h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.intro-text p {
+    margin: 1rem 0;
+    color: #666;
+}
+
+.intro-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.intro-text ul li {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1400px; /* Wijzig deze regel om de maximale breedte te vergroten */
+    flex-wrap: wrap; /* Voeg deze regel toe */
+}
+
+.about, .skills {
+    flex: 1;
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-width: 300px; /* Voeg deze regel toe */
+}
+
+.cv-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color: var(--surface-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    margin: 1rem 0;
+    color: #666;
+}
+
+.skills ul li span {
+    float: right;
+    color: #333;
+}
+
+.skills .skill {
+    margin: 1rem 0;
+}
+
+.skills .progress-bar {
+    background: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.skills .progress {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    height: 100%;
+    border-radius: 25px;
+}
+
+.projects {
+    display: grid; /* Wijzig deze regel */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Voeg deze regel toe */
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.project {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+    text-decoration: none; /* Voeg deze regel toe */
+    color: inherit; /* Voeg deze regel toe */
+    background-color: var(--surface-color);
+    color: var(--text-primary-color);
+    border: 1px solid var(--background-color);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project p {
+    margin: 0;
+    color: #666;
+}
+
+.project:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Voeg deze regel toe */
+    border-color: var(--highlight-color);
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Voeg deze regel toe */
+    }
+
+    .about, .skills {
+        width: 100%; /* Voeg deze regel toe */
+    }
+
+    .project {
+        width: 100%;
+    }
+}
+
+footer {
+    background: var(--primary-gradient);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    color: var(--surface-color);
+}
+
+/* Remove dots from lists */
+.no-dots {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+button, .cv-link {
+    background-color: var(--accent-color);
+    color: var(--surface-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover, .cv-link:hover {
+    background-color: var(--highlight-color);
+}

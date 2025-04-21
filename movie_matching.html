@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Matching - Julius Gerth</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Movie Matching</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Beschrijving</h2>
+        <p>
+          Movie Matching is een webapplicatie waarmee gebruikers films en series
+          kunnen ontdekken, aanbevelingen kunnen ontvangen op basis van genres,
+          en hun favoriete films kunnen opslaan in hun account. Het project
+          maakt gebruik van de TMDB API om actuele film- en seriegegevens op te
+          halen.
+        </p>
+        <img
+          src="img/moviematch.png"
+          alt="Movie Matching Overview"
+          style="width: 80%; height: auto; margin-bottom: 1rem"
+        />
+        <h3>Functionaliteiten</h3>
+        <ul>
+          <li>
+            Trending en Now Playing Films: Bekijk populaire en actuele films.
+          </li>
+          <li>
+            Aanbevelingen: Ontvang gepersonaliseerde aanbevelingen op basis van
+            geselecteerde genres.
+          </li>
+          <li>
+            Zoekfunctie: Zoek naar films en series met een geïntegreerde
+            zoekbalk.
+          </li>
+          <li>
+            Accountbeheer: Gebruikers kunnen zich registreren, inloggen en hun
+            profiel beheren.
+          </li>
+          <li>
+            Favorieten Opslaan: Gebruikers kunnen films opslaan en beheren in
+            hun persoonlijke account.
+          </li>
+          <li>
+            Profielfoto Uploaden: Gebruikers kunnen een profielfoto uploaden en
+            aanpassen.
+          </li>
+        </ul>
+        <h3>Technologieën</h3>
+        <ul>
+          <li>Frontend: HTML, CSS, EJS (Embedded JavaScript Templates)</li>
+          <li>Backend: Node.js, Express.js</li>
+          <li>Database: MongoDB</li>
+          <li>
+            Authenticatie: Bcrypt voor wachtwoordhashing en Express-session voor
+            sessiebeheer
+          </li>
+          <li>API: TMDB API voor film- en seriegegevens</li>
+          <li>Bestandsbeheer: Multer voor het uploaden van profielfoto's</li>
+        </ul>
+        <h3>Belangrijkste Leerpunten</h3>
+        <ul>
+          <li>
+            Werken met externe API's (TMDB) en het verwerken van JSON-gegevens.
+          </li>
+          <li>Implementeren van gebruikersauthenticatie en sessiebeheer.</li>
+          <li>
+            Gebruik van MongoDB voor het opslaan van gebruikersgegevens en
+            favorieten.
+          </li>
+          <li>Dynamische rendering van pagina's met EJS.</li>
+          <li>Bestandsbeheer en het veilig opslaan van geüploade bestanden.</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Julius Gerth</p>
+    </footer>
+  </body>
+</html>
