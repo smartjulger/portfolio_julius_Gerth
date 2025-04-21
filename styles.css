@@ -246,6 +246,16 @@ footer {
     color: var(--surface-color);
 }
 
+/* Improve footer link readability */
+footer a {
+    color: #ffffff; /* Set link color to white */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
 /* Remove dots from lists */
 .no-dots {
     list-style-type: none;
