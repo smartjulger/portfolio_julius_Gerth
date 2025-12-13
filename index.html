@@ -11,46 +11,47 @@
       <nav>
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
+        <button id="translate-btn">Vertaal naar Nederlands</button>
       </nav>
     </header>
     <main>
       <section class="intro">
         <img src="img/linkedingfoto.jpg" alt="A portrait of Julius Gerth" />
         <div class="intro-text">
-          <h1>Hello, my name is</h1>
+          <h1 id="intro-hello">Hello, my name is</h1>
           <h2>Julius Gerth</h2>
-          <h3>Communication and Multimedia Design Student</h3>
-          <p>
+          <h3 id="intro-role">Communication and Multimedia Design Student</h3>
+          <p id="intro-desc">
             On this site, you can find information about me and the projects I have worked on.
           </p>
           <ul>
-            <li>Born on February 3, 2004</li>
+            <li id="birth-date">Born on February 3, 2004</li>
             <li>+31 06 57 89 71 58</li>
             <li>julger04@gmail.com</li>
-            <li>Hoofddorp, The Netherlands</li>
+            <li id="location">Hoofddorp, The Netherlands</li>
           </ul>
         </div>
       </section>
       <div class="content">
         <section class="about">
-          <h2>About Me</h2>
-          <p>
+          <h2 id="about-title">About Me</h2>
+          <p id="about-desc">
             My name is Julius Gerth, and I am a 21-year-old student in my second year of the Communication and Multimedia Design program. I enjoy working in teams but am also capable of working independently when needed. I am a creative student who is eager to learn and try new things.
           </p>
-          <a href="cv_Julius_Gerth.pdf" class="cv-link" download>My CV</a>
+          <a href="cv_Julius_Gerth.pdf" class="cv-link" download id="cv-link">My CV</a>
         </section>
       </div>
       <section class="contact">
-        <h2>Contact Me</h2>
+        <h2 id="contact-title">Contact Me</h2>
         <form action="https://formsubmit.co/julger04@gmail.com" method="POST">
           <input type="hidden" name="_next" value="https://julius-gerth.github.io/portfolio_julius_Gerth/">
-          <label for="name">Name:</label>
+          <label for="name" id="label-name">Name:</label>
           <input type="text" id="name" name="name" required>
-          <label for="email">Email:</label>
+          <label for="email" id="label-email">Email:</label>
           <input type="email" id="email" name="email" required>
-          <label for="message">Message:</label>
+          <label for="message" id="label-message">Message:</label>
           <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send</button>
+          <button type="submit" id="send-btn">Send</button>
         </form>
       </section>
     </main>
@@ -66,5 +67,6 @@
         >
       </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

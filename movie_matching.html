@@ -8,16 +8,17 @@
   </head>
   <body>
     <header>
-      <h1>Movie Matching</h1>
+      <h1 id="movie-matching-title-h1">Movie Matching</h1>
       <nav>
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
+        <button id="translate-btn">Vertaal naar Nederlands</button>
       </nav>
     </header>
     <main>
       <section>
-        <h2>Description</h2>
-        <p>
+        <h2 id="movie-matching-desc-h2">Description</h2>
+        <p id="movie-matching-desc-p1">
           Movie Matching is a web application that helps users discover movies and TV shows. Users can receive personalized recommendations based on their favorite genres and save their favorite titles to their account. The project leverages the TMDB API to fetch up-to-date movie and series data.
         </p>
         <img
@@ -25,54 +26,55 @@
           alt="Movie Matching Overview"
           style="width: 80%; height: auto; margin-bottom: 1rem"
         />
-        <h3>Features</h3>
+        <h3 id="movie-matching-features-h3">Features</h3>
         <ul>
-          <li>
+          <li id="movie-matching-features-li1">
             Trending and Now Playing: Browse popular and currently playing movies.
           </li>
-          <li>
+          <li id="movie-matching-features-li2">
             Personalized Recommendations: Get movie suggestions based on selected genres.
           </li>
-          <li>
+          <li id="movie-matching-features-li3">
             Search Functionality: Search for movies and TV shows using an integrated search bar.
           </li>
-          <li>
+          <li id="movie-matching-features-li4">
             User Account Management: Users can register, log in, and manage their profiles.
           </li>
-          <li>
+          <li id="movie-matching-features-li5">
             Favorites: Users can save and manage a list of their favorite movies.
           </li>
-          <li>
+          <li id="movie-matching-features-li6">
             Profile Picture Uploads: Users can upload and customize their profile pictures.
           </li>
         </ul>
-        <h3>Technologies Used</h3>
+        <h3 id="movie-matching-tech-h3">Technologies Used</h3>
         <ul>
-          <li>Frontend: HTML, CSS, EJS (Embedded JavaScript Templates)</li>
-          <li>Backend: Node.js, Express.js</li>
-          <li>Database: MongoDB</li>
-          <li>
+          <li id="movie-matching-tech-li1">Frontend: HTML, CSS, EJS (Embedded JavaScript Templates)</li>
+          <li id="movie-matching-tech-li2">Backend: Node.js, Express.js</li>
+          <li id="movie-matching-tech-li3">Database: MongoDB</li>
+          <li id="movie-matching-tech-li4">
             Authentication: Bcrypt for password hashing and Express-session for session management
           </li>
-          <li>API: TMDB API for movie and series data</li>
-          <li>File Handling: Multer for profile picture uploads</li>
+          <li id="movie-matching-tech-li5">API: TMDB API for movie and series data</li>
+          <li id="movie-matching-tech-li6">File Handling: Multer for profile picture uploads</li>
         </ul>
-        <h3>Key Learning Outcomes</h3>
+        <h3 id="movie-matching-learning-h3">Key Learning Outcomes</h3>
         <ul>
-          <li>
+          <li id="movie-matching-learning-li1">
             Working with external APIs (TMDB) and processing JSON data.
           </li>
-          <li>Implementing user authentication and session management.</li>
-          <li>
+          <li id="movie-matching-learning-li2">Implementing user authentication and session management.</li>
+          <li id="movie-matching-learning-li3">
             Using MongoDB to store user data and favorites.
           </li>
-          <li>Dynamically rendering pages with EJS.</li>
-          <li>Handling file uploads and securely storing them.</li>
+          <li id="movie-matching-learning-li4">Dynamically rendering pages with EJS.</li>
+          <li id="movie-matching-learning-li5">Handling file uploads and securely storing them.</li>
         </ul>
       </section>
     </main>
     <footer>
       <p>&copy; 2025 Julius Gerth</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
