@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!doctype html>
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,66 +7,175 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <button id="translate-btn">Vertaal naar Nederlands</button>
-      </nav>
-    </header>
+    <nav>
+      <a href="index.html" class="nav-logo">Julius Gerth</a>
+      <ul class="nav-links">
+        <li><a href="#over-mij">Over mij</a></li>
+        <li><a href="#projecten">Projecten</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
     <main>
-      <section class="intro">
-        <img src="img/linkedingfoto.jpg" alt="A portrait of Julius Gerth" />
-        <div class="intro-text">
-          <h1 id="intro-hello">Hello, my name is</h1>
-          <h2>Julius Gerth</h2>
-          <h3 id="intro-role">Communication and Multimedia Design Student</h3>
-          <p id="intro-desc">
-            On this site, you can find information about me and the projects I have worked on.
+      <section class="hero">
+        <img
+          src="img/linkedingfoto.jpg"
+          alt="Portretfoto van Julius Gerth"
+          class="hero-photo"
+        />
+        <div class="hero-content">
+          <h1>Julius Gerth</h1>
+          <p class="hero-tagline">
+            Communication &amp; Multimedia Design student
           </p>
-          <ul>
-            <li id="birth-date">Born on February 3, 2004</li>
+          <p class="hero-desc">
+            Op deze site vind je meer over mij en de projecten die ik heb
+            gemaakt.
+          </p>
+          <ul class="hero-info">
+            <li>Geboren 3 februari 2004</li>
             <li>+31 06 57 89 71 58</li>
             <li>julger04@gmail.com</li>
-            <li id="location">Hoofddorp, The Netherlands</li>
+            <li>Hoofddorp, Nederland</li>
           </ul>
         </div>
       </section>
-      <div class="content">
-        <section class="about">
-          <h2 id="about-title">About Me</h2>
-          <p id="about-desc">
-            My name is Julius Gerth, and I am a 21-year-old student in my second year of the Communication and Multimedia Design program. I enjoy working in teams but am also capable of working independently when needed. I am a creative student who is eager to learn and try new things.
-          </p>
-          <a href="cv_Julius_Gerth.pdf" class="cv-link" download id="cv-link">My CV</a>
-        </section>
-      </div>
-      <section class="contact">
-        <h2 id="contact-title">Contact Me</h2>
+
+      <section class="card about" id="over-mij">
+        <h2>Over mij</h2>
+        <p>
+          Mijn naam is Julius Gerth, en ik ben een derdejaarsstudent
+          Communication &amp; Multimedia Design aan de Hogeschool van Amsterdam.
+          Ik werk graag in teams, maar kan ook prima zelfstandig werken. Ik ben
+          een creatieve student die graag nieuwe dingen leert en uitprobeert.
+        </p>
+        <a href="cv_Julius_Gerth.pdf" class="btn" download>Mijn CV</a>
+      </section>
+
+      <section id="projecten">
+        <ul class="project-grid">
+          <li class="project-card">
+            <a href="designsystem.html" class="project-card-link">
+              <div class="project-card-img-placeholder">Design System</div>
+              <div class="project-card-body">
+                <h3>Design System</h3>
+                <p>
+                  Een eigen design system gemaakt in Figma met componenten,
+                  kleuren en typografie.
+                </p>
+                <span class="project-card-link-text">Lees meer →</span>
+              </div>
+            </a>
+          </li>
+          <li class="project-card">
+            <a href="browser_tech.html" class="project-card-link">
+              <img
+                src="https://smartjulger.github.io/meesterschap/images/projecten/bt.png"
+                alt="Browser Tech"
+              />
+              <div class="project-card-body">
+                <h3>Browser Tech</h3>
+                <p>
+                  Wat voor mij logisch is, is niet voor iedereen logisch. Je
+                  moet dingen echt duidelijk maken voor de gebruiker.
+                </p>
+                <span class="project-card-link-text">Lees meer →</span>
+              </div>
+            </a>
+          </li>
+          <li class="project-card">
+            <a href="hackathon.html" class="project-card-link">
+              <img
+                src="https://smartjulger.github.io/meesterschap/images/projecten/hackaton.png"
+                alt="Hackathon"
+              />
+              <div class="project-card-body">
+                <h3>Hackathon</h3>
+                <p>
+                  Communicatie binnen een team is key. Zonder goede afstemming
+                  gaat een website snel kapot.
+                </p>
+                <span class="project-card-link-text">Lees meer →</span>
+              </div>
+            </a>
+          </li>
+          <li class="project-card">
+            <a href="api.html" class="project-card-link">
+              <img
+                src="https://smartjulger.github.io/meesterschap/images/projecten/solar.png"
+                alt="API"
+              />
+              <div class="project-card-body">
+                <h3>API</h3>
+                <p>
+                  Ik heb geleerd hoe je een volledige 3D-website bouwt en wat de
+                  echte kracht van JavaScript is.
+                </p>
+                <span class="project-card-link-text">Lees meer →</span>
+              </div>
+            </a>
+          </li>
+          <li class="project-card">
+            <a href="beyond.html" class="project-card-link">
+              <img src="img/rest.png" alt="Rest Quest" />
+              <div class="project-card-body">
+                <h3>Rest Quest</h3>
+                <p>
+                  Een interactief, schermloos product om studenten te helpen
+                  beter te slapen.
+                </p>
+                <span class="project-card-link-text">Lees meer →</span>
+              </div>
+            </a>
+          </li>
+          <li class="project-card">
+            <a href="movie_matching.html" class="project-card-link">
+              <img src="img/moviematch.png" alt="Movie Matching" />
+              <div class="project-card-body">
+                <h3>Movie Matching</h3>
+                <p>Een webapp voor het ontdekken van films en tv-shows.</p>
+                <span class="project-card-link-text">Lees meer →</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card contact" id="contact">
+        <h2>Contact</h2>
         <form action="https://formsubmit.co/julger04@gmail.com" method="POST">
-          <input type="hidden" name="_next" value="https://julius-gerth.github.io/portfolio_julius_Gerth/">
-          <label for="name" id="label-name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email" id="label-email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message" id="label-message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit" id="send-btn">Send</button>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://julius-gerth.github.io/portfolio_julius_Gerth/"
+          />
+          <div class="form-group">
+            <label for="name">Naam</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Bericht</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Verstuur</button>
         </form>
       </section>
     </main>
+
     <footer>
-      <p>&copy; 2025 Julius Gerth</p>
-      <p>Phone: +31 06 57 89 71 58</p>
-      <p>Email: <a href="mailto:julger04@gmail.com">julger04@gmail.com</a></p>
-      <p>
+      <p>Julius Gerth</p>
+      <div class="footer-links">
+        <a href="mailto:julger04@gmail.com">julger04@gmail.com</a>
         <a
           href="https://www.linkedin.com/in/julius-gerth-81500b1b6/"
           target="_blank"
           >LinkedIn</a
         >
-      </p>
+      </div>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
